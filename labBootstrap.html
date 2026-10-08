@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINIMALIST</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero-slide {
+            min-height: 420px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.35);
+            min-height: 420px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-card {
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-card img {
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+        }
+
+        .btn-dark {
+            background-color: #333;
+            border-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+         <a class="navbar-brand" href="#"><img src="clothe.png" alt="Logo" class="img-fluid" style="max-height: 40px;"></a>
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active"
+                       href="#">
+                        หน้าแรก
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
+                        เมนู
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#collection">
+                                เสื้อผ้า
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#promotion">
+                                โปรโมชั่น
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#contact">
+                                ติดต่อเรา
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        เกี่ยวกับเรา
+                    </a>
+                </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2"
+                       type="search"
+                       placeholder="ค้นหา"
+                       aria-label="Search">
+                <button class="btn btn-outline-dark"
+                        type="submit">
+                    ค้นหา
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="py-5 bg-light">
+    <div class="container my-4">
+        <div id="heroCarousel"
+             class="carousel slide shadow rounded-4"
+             data-bs-ride="carousel">
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button"
+                        data-bs-target="#heroCarousel"
+                        data-bs-slide-to="0"
+                        class="active">
+                </button>
+                <button type="button"
+                        data-bs-target="#heroCarousel"
+                        data-bs-slide-to="1">
+                </button>
+                <button type="button"
+                        data-bs-target="#heroCarousel"
+                        data-bs-slide-to="2">
+                </button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero-slide"
+                         style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80');">
+                        <div class="hero-overlay text-center text-white">
+                            <div class="container">
+                                <h1 class="display-4 fw-bold">
+                                    MINIMALIST
+                                </h1>
+                                <p class="lead">
+                                    เสื้อผ้าสไตล์เรียบง่าย
+                                    สำหรับทุกวัน
+                                </p>
+                                <a class="btn btn-light btn-lg"
+                                   href="#collection">
+                                    ดูสินค้า
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero-slide"
+                         style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80');">
+                        <div class="hero-overlay text-center text-white">
+                            <div class="container">
+                                <span class="badge bg-light text-dark mb-3">
+                                    New
+                                </span>
+                                <h1 class="display-4 fw-bold">
+                                    New Collection
+                                </h1>
+                                <p class="lead">
+                                    คอลเลกชันใหม่
+                                    เรียบง่ายและใส่ได้ทุกวัน
+                                </p>
+                                <a class="btn btn-light btn-lg"
+                                   href="#collection">
+                                    ดูคอลเลกชัน
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="hero-slide"
+                         style="background-image: url('https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=80');">
+                        <div class="hero-overlay text-center text-white">
+                            <div class="container">
+                                <span class="badge bg-light text-dark mb-3">
+                                    Promotion
+                                </span>
+                                <h1 class="display-4 fw-bold">
+                                    Special Offer
+                                </h1>
+                                <p class="lead">
+                                    ซื้อ 2 ชิ้น รับส่วนลด 10%
+                                </p>
+                                <a class="btn btn-light btn-lg"
+                                   href="#promotion">
+                                    ดูโปรโมชั่น
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Previous Button -->
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <!-- Next Button -->
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Feature Cards -->
+<section class="pb-5">
+    <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card h-100 feature-card">
+                    <div class="card-body p-4">
+                        <div class="fs-1 mb-3">
+                            👕
+                        </div>
+                        <h3 class="h5 fw-bold">
+                            ใส่สบาย
+                        </h3>
+                        <p class="text-muted">
+                            เสื้อผ้าที่เหมาะสำหรับ
+                            การใส่ในชีวิตประจำวัน
+                        </p>
+            <div class="col-md-4">
+                <div class="card h-100 feature-card">
+                    <div class="card-body p-4">
+                        <div class="fs-1 mb-3">
+                            ✨
+                        </div>
+                        <h3 class="h5 fw-bold">
+                            ดีไซน์เรียบง่าย
+                        </h3>
+                        <p class="text-muted">
+                            เน้นการออกแบบที่เรียบง่าย
+                            และสามารถใส่ได้หลายโอกาส
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 feature-card">
+                    <div class="card-body p-4">
+                        <div class="fs-1 mb-3">
+                            📦
+                        </div>
+                        <h3 class="h5 fw-bold">
+                            จัดส่งทั่วประเทศ
+                        </h3>
+                        <p class="text-muted">
+                            สั่งซื้อออนไลน์
+                            พร้อมจัดส่งถึงบ้าน
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Collection -->
+<section id="collection" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center section-title">
+            <h2 class="fw-bold">
+                Our Collection
+            </h2>
+            <p class="text-muted">
+                เสื้อผ้าแนะนำจาก MINIMALIST
+            </p>
+        </div>
+        <div class="row g-4">
+
+            <!-- Product 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card product-card h-100">
+                    <img src="https://www.greyhound.co.th/cdn/shop/files/030332_f6e02331-992e-491e-87ce-d0ed1d202830_900x900.png?v=1761746903"
+                         class="card-img-top"
+                         alt="เสื้อยืดสีขาว">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            Basic T-Shirt
+                        </h5>
+                        <p class="card-text text-muted">
+                            เสื้อยืดเรียบง่าย
+                            ใส่ได้ทุกวัน
+                        </p>
+                        <p class="fw-bold">
+                            ฿490
+                        </p>
+                        <button class="btn btn-dark">
+                            ซื้อสินค้า
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=600&q=80"
+                         class="card-img-top"
+                         alt="เสื้อเชิ้ต">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            Basic Shirt
+                        </h5>
+                        <p class="card-text text-muted">
+                            เสื้อเชิ้ตสำหรับ
+                            วันทำงานและวันสบาย ๆ
+                        </p>
+                        <p class="fw-bold">
+                            ฿690
+                        </p>
+                        <button class="btn btn-dark">
+                            ซื้อสินค้า
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card product-card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKQtLphHapOnY5oYkaeRG0xHrA_ZPvl6y-DtcxL4vl_ehvIAaHG25-I0&s=10"
+                         class="card-img-top"
+                         alt="กางเกง">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            Straight Pants
+                        </h5>
+                        <p class="card-text text-muted">
+                            กางเกงทรงตรง
+                            ใส่ได้หลายสไตล์
+                        </p>
+                        <p class="fw-bold">
+                            ฿790
+                        </p>
+                        <button class="btn btn-dark">
+                            ซื้อสินค้า
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Promotion -->
+<section id="promotion" class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold">
+            Promotion
+        </h2>
+        <p class="text-muted">
+            โปรโมชั่นประจำเดือน
+        </p>
+        <div class="p-5 bg-light rounded-4">
+            <h3>
+                Buy 2 Get 10% Off
+            </h3>
+            <p>
+                ซื้อเสื้อผ้า 2 ชิ้นขึ้นไป
+                รับส่วนลด 10%
+            </p>
+            <button class="btn btn-dark">
+                Shop Now
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <h2 class="fw-bold">
+                    About MINIMALIST
+                </h2>
+                <p>
+                    MINIMALIST เป็นร้านเสื้อผ้าที่เน้น
+                    การออกแบบเรียบง่ายและสามารถ
+                    ใส่ได้ในชีวิตประจำวัน
+                </p>
+                <p>
+                    เราเลือกเสื้อผ้าที่ใส่สบาย
+                    และสามารถนำมาแต่งตัวได้หลายแบบ
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6 text-center">
+                <div class="p-5 bg-white rounded-4">
+                    <h4>
+                        Simple
+                    </h4>
+                    <h4>
+                        Comfortable
+                    </h4>
+                    <h4>
+                        Everyday
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">
+                Contact Us
+            </h2>
+            <p class="text-muted">
+                ติดต่อสอบถามหรือสั่งซื้อสินค้า
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="name"
+                               class="form-label">
+                            ชื่อ
+                        </label>
+                        <input type="text"
+                               class="form-control"
+                               id="name"
+                               placeholder="กรอกชื่อ">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email"
+                               class="form-label">
+                            Email
+                        </label>
+                        <input type="email"
+                               class="form-control"
+                               id="email"
+                               placeholder="กรอก Email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="product"
+                               class="form-label">
+                            สินค้าที่สนใจ
+                        </label>
+                        <select class="form-select"
+                                id="product">
+                            <option selected>
+                                เลือกสินค้า
+                            </option>
+                            <option>
+                                Basic T-Shirt
+                            </option>
+                            <option>
+                                Basic Shirt
+                            </option>
+                            <option>
+                                Straight Pants
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message"
+                               class="form-label">
+                            ข้อความ
+                        </label>
+                        <textarea class="form-control"
+                                  id="message"
+                                  rows="4"
+                                  placeholder="เขียนข้อความ">
+                        </textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit"
+                                class="btn btn-dark">
+                            ส่งข้อความ
+                        </button>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">
+        © 6710510105 Nattatida Chaiyathep.
+    </p>
+</footer>
+
+</body>
+</html>  
